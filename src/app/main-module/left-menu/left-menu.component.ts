@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-menu.component.css']
 })
 export class LeftMenuComponent implements OnInit {
-  menuItems: string [] = ['Feed', 'Diary'];
+  menuItems = [
+    {item: 'Feed', itemUrl: 'news_feed'},
+    {item: 'Diary', itemUrl: 'diary'}
+  ];
 
   constructor() { }
 
