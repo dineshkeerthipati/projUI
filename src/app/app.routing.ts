@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 const APP_ROUTES: Route[] = [
   {path: '', redirectTo: 'main', pathMatch: 'full'},
-  {path: 'main', loadChildren: () => import('./main-module/main.module').then(m => m.MainModule)}
+  {path: 'main', loadChildren: './main-module/main.module#MainModule'}
 ];
 
 @NgModule({

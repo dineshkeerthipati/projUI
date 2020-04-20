@@ -6,7 +6,7 @@ const MAIN_ROUTES: Route[] = [
   {
     path: '', component: MainComponent,
     children: [
-      {path: 'news_feed', loadChildren: () => import('./feed-module/feed.module').then(m => m.FeedModule)}
+      {path: 'news_feed', loadChildren: './feed-module/feed.module#FeedModule'}
     ]
   },
 ];
